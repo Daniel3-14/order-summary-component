@@ -1,0 +1,115 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purplish: rgba(56, 42, 225);
+    --activePurplish: #766cf1;
+    --grey: #737993;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    background-color: lightblue;
+}
+
+main {
+max-width: 450px;
+min-width: 360px;
+margin: 6rem auto;
+background-color: white;
+overflow: hidden;
+border-radius: 20px;
+}
+
+
+
+.card-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 25px;
+width: 80%;
+margin: 40px auto;
+}
+
+.card-desc {
+    width: 90%;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.plan-container,
+button {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fe;
+    padding: 20px;
+}
+
+.plan-left {
+    display: flex;
+    gap: 18px;
+}
+
+.plan-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    color: var(--purplish);
+}
+
+button {
+    background-color: var(--purplish);
+    color: white;
+    font-size: 1.05rem;
+    padding: 16px;
+    box-shadow: 0px 15px 20px 0px rgba(56, 42, 225, 0.25);
+    border: none;
+}
+
+button,
+.cancel {
+    font-weight: 700;
+}
+
+.card-desc,
+.plan-desc > p,
+.cancel {
+    color: var(--grey);
+}
+
+a:hover {
+    color: var(--activePurplish);
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--activePurplish);
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: black;
+}
